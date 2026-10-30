@@ -23,7 +23,7 @@
 **Docente:** Ing. Irina Fong  
 **Tema:** Programación segura según OWASP — protección de datos  
 **Estudiante(s):** Andres Dommar E-8-180720  
-Dylan Pitti 8-1024-553
+                    Dylan Pitti 8-1024-553
 **Fecha de realización:** 30 de octubre de 2026
 
 ## Índice

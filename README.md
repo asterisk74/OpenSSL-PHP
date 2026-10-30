@@ -1,16 +1,16 @@
 # Laboratorio de seguridad en PHP con OpenSSL y Sodium
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PHP-8.5.0-777BB4?style=flat-square&amp;logo=php&amp;logoColor=white" alt="PHP 8.5.0">
-  <img src="https://img.shields.io/badge/OpenSSL-3.5.4-721412?style=flat-square&amp;logo=openssl&amp;logoColor=white" alt="OpenSSL 3.5.4">
-  <img src="https://img.shields.io/badge/Sodium-Habilitado-326A81?style=flat-square" alt="Extensión Sodium habilitada">
-  <img src="https://img.shields.io/badge/WampServer-Apache-F37726?style=flat-square&amp;logo=apache&amp;logoColor=white" alt="WampServer y Apache">
+  <img src="insignias/php.png" alt="PHP 8.5.0" height="33">
+  <img src="insignias/openssl.png" alt="OpenSSL 3.5.4" height="33">
+  <img src="insignias/sodium.png" alt="Sodium habilitado" height="33">
+  <img src="insignias/wampserver.png" alt="WampServer y Apache" height="33">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/VS_Code-Editor-007ACC?style=flat-square&amp;logo=visualstudiocode&amp;logoColor=white" alt="Visual Studio Code">
-  <img src="https://img.shields.io/badge/HTML5-Formularios-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-Estilos-1572B6?style=flat-square&amp;logo=css3&amp;logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/OWASP-Seguridad-000000?style=flat-square&amp;logo=owasp&amp;logoColor=white" alt="OWASP">
+  <img src="insignias/vscode.png" alt="Visual Studio Code" height="33">
+  <img src="insignias/html5.png" alt="HTML5" height="33">
+  <img src="insignias/css3.png" alt="CSS3" height="33">
+  <img src="insignias/owasp.png" alt="OWASP" height="33">
 </p>
 
 <p align="center"><strong>🔐 Cifrado AES-128-CBC · ✍️ Firmas RSA/SHA-256 · 📜 Certificados X.509 · 🛡️ Cifrado autenticado con Sodium</strong></p>
@@ -22,8 +22,10 @@
 **Asignatura:** Desarrollo de Web  
 **Docente:** Ing. Irina Fong  
 **Tema:** Programación segura según OWASP — protección de datos  
-**Estudiante(s):** Andres Dommar E-8-180720  
-                    Dylan Pitti 8-1024-553
+**Estudiantes:**  
+Andres Dommar E-8-180720  
+Dylan Pitti 8-1024-553  
+
 **Fecha de realización:** 30 de octubre de 2026
 
 ## Índice

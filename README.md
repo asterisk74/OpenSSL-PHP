@@ -1,29 +1,45 @@
 # Laboratorio de seguridad en PHP con OpenSSL y Sodium
 
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.5.0-777BB4?style=flat-square&amp;logo=php&amp;logoColor=white" alt="PHP 8.5.0">
+  <img src="https://img.shields.io/badge/OpenSSL-3.5.4-721412?style=flat-square&amp;logo=openssl&amp;logoColor=white" alt="OpenSSL 3.5.4">
+  <img src="https://img.shields.io/badge/Sodium-Habilitado-326A81?style=flat-square" alt="Extensión Sodium habilitada">
+  <img src="https://img.shields.io/badge/WampServer-Apache-F37726?style=flat-square&amp;logo=apache&amp;logoColor=white" alt="WampServer y Apache">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/VS_Code-Editor-007ACC?style=flat-square&amp;logo=visualstudiocode&amp;logoColor=white" alt="Visual Studio Code">
+  <img src="https://img.shields.io/badge/HTML5-Formularios-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-Estilos-1572B6?style=flat-square&amp;logo=css3&amp;logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/OWASP-Seguridad-000000?style=flat-square&amp;logo=owasp&amp;logoColor=white" alt="OWASP">
+</p>
+
+<p align="center"><strong>🔐 Cifrado AES-128-CBC · ✍️ Firmas RSA/SHA-256 · 📜 Certificados X.509 · 🛡️ Cifrado autenticado con Sodium</strong></p>
+
+
 **Universidad Tecnológica de Panamá**  
 **Facultad:** Facultad de Ciencias de la Computacion  
 **Campus:** Víctor Levi Sasso  
 **Asignatura:** Desarrollo de Web  
 **Docente:** Ing. Irina Fong  
 **Tema:** Programación segura según OWASP — protección de datos  
-**Estudiante(s):** Andres Dommar E-8-180720
-                   Dylan Pitti   8-1024-553
+**Estudiante(s):** Andres Dommar E-8-180720  
+Dylan Pitti 8-1024-553
 **Fecha de realización:** 30 de octubre de 2026
 
 ## Índice
 
-1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
-3. [Herramientas y requisitos](#3-herramientas-y-requisitos)
-4. [Estructura del proyecto](#4-estructura-del-proyecto)
-5. [Instalación y ejecución en WampServer](#5-instalación-y-ejecución-en-wampserver)
-6. [Desarrollo de los programas](#6-desarrollo-de-los-programas)
-7. [Funciones criptográficas utilizadas](#7-funciones-criptográficas-utilizadas)
-8. [Seguridad y recomendaciones de OWASP](#8-seguridad-y-recomendaciones-de-owasp)
-9. [Dificultades y soluciones](#9-dificultades-y-soluciones)
-10. [Verificaciones finales](#10-verificaciones-finales)
-11. [Resultados y conclusión](#11-resultados-y-conclusión)
-12. [Referencias](#12-referencias)
+1. [🔐 Introducción](#1-introducción)
+2. [🎯 Objetivos](#2-objetivos)
+3. [🧰 Herramientas y requisitos](#3-herramientas-y-requisitos)
+4. [📁 Estructura del proyecto](#4-estructura-del-proyecto)
+5. [⚙️ Instalación y ejecución en WampServer](#5-instalación-y-ejecución-en-wampserver)
+6. [🧪 Desarrollo de los programas](#6-desarrollo-de-los-programas)
+7. [🔑 Funciones criptográficas utilizadas](#7-funciones-criptográficas-utilizadas)
+8. [🛡️ Seguridad y recomendaciones de OWASP](#8-seguridad-y-recomendaciones-de-owasp)
+9. [🛠️ Dificultades y soluciones](#9-dificultades-y-soluciones)
+10. [✅ Verificaciones finales](#10-verificaciones-finales)
+11. [📌 Resultados y conclusión](#11-resultados-y-conclusión)
+12. [📚 Referencias](#12-referencias)
 
 ## 1. Introducción
 
@@ -46,12 +62,12 @@ El laboratorio se realizó localmente en Windows usando **WampServer** y **Visua
 
 | Herramienta | Versión o descripción | Uso |
 | --- | --- | --- |
-| PHP | **8.5.0** | Ejecución de los programas y formularios PHP |
-| OpenSSL | **3.5.4** (verificado desde PHP CLI) | Cifrado, RSA, firmas y certificados |
-| Extensión `openssl` | Habilitada | Funciones `openssl_*` |
-| Extensión `sodium` | Habilitada | Cifrado autenticado mediante `secretbox` |
-| WampServer / Apache | Entorno local | Servir las páginas PHP en `localhost` |
-| Visual Studio Code | Editor de código | Edición de los archivos y comprobaciones |
+| 🐘 **PHP** | **8.5.0** | Ejecución de los programas y formularios PHP |
+| 🔒 **OpenSSL** | **3.5.4** (verificado desde PHP CLI) | Cifrado, RSA, firmas y certificados |
+| 🔐 Extensión `openssl` | Habilitada | Funciones `openssl_*` |
+| 🛡️ Extensión `sodium` | Habilitada | Cifrado autenticado mediante `secretbox` |
+| 🌐 **WampServer / Apache** | Entorno local | Servir las páginas PHP en `localhost` |
+| 💻 **Visual Studio Code** | Editor de código | Edición de los archivos y comprobaciones |
 
 Para confirmar las extensiones y la versión de OpenSSL, se ejecutaron los siguientes comandos **en PowerShell**, dentro del proyecto:
 
@@ -90,7 +106,7 @@ SeguridadOpenSSL-main/
 
 La carpeta original también contenía otros ejemplos del repositorio base. **No son necesarios para ejecutar los cinco ejercicios documentados aquí.** En esta copia de entrega se incluyeron únicamente los archivos utilizados y las evidencias, sin claves privadas.
 
-### Página de inicio
+### 🏠 Página de inicio
 
 `index.php` contiene enlaces para ejecutar los programas en el orden de la práctica. `firmaOtra.php` debe ejecutarse **antes** de `FirmarMensaje.php` porque este último utiliza el certificado y la clave generados previamente.
 
@@ -118,7 +134,7 @@ Test-Path "C:\wamp64\bin\php\php8.5.0\extras\ssl\openssl.cnf"
 
 Si la ruta no existe en otro equipo, se deberá ajustar a su instalación y comprobar la configuración de OpenSSL; no se debe asumir que todos los equipos tienen la misma carpeta.
 
-### Almacenamiento de claves de prueba
+### 🔑 Almacenamiento de claves de prueba
 
 Los programas que generan claves las guardan en una ubicación separada del directorio web, en este equipo:
 
@@ -137,7 +153,7 @@ Estas carpetas se crean al ejecutar los ejemplos correspondientes. **No están i
 
 ## 6. Desarrollo de los programas
 
-### 6.1. `Encriptacion.php` — Cifrado y descifrado AES-128-CBC
+### 🔐 6.1. `Encriptacion.php` — Cifrado y descifrado AES-128-CBC
 
 Este primer programa recibe un mensaje desde un formulario HTML y lo cifra utilizando **AES-128-CBC**. La clave secreta se genera de forma aleatoria con 16 bytes, mientras que el vector de inicialización (IV) también se genera aleatoriamente con la longitud requerida por el algoritmo.
 
@@ -157,7 +173,7 @@ $descifrado = openssl_decrypt($cifrado, $algoritmo, $clave, 0, $iv);
 
 **Observación:** AES-CBC por sí solo no autentica el contenido. Este ejemplo demuestra confidencialidad y recuperación del texto, pero la detección de alteraciones se muestra posteriormente con Sodium.
 
-### 6.2. `firma7.php` — Firma digital con RSA y SHA-256
+### ✍️ 6.2. `firma7.php` — Firma digital con RSA y SHA-256
 
 Este programa permite escribir un mensaje, generar un par de claves **RSA de 2048 bits** y firmar la información utilizando `openssl_sign()` con SHA-256. Luego se utiliza la clave pública y `openssl_verify()` para comprobar si la firma corresponde al mensaje.
 
@@ -176,7 +192,7 @@ También se calculan huellas SHA-256 de los dos textos para visualizar el cambio
 
 Una firma digital no cifra el mensaje ni oculta su contenido. Permite comprobar que la firma corresponde a los datos y a la clave pública utilizada.
 
-### 6.3. `firmaOtra.php` — Certificado X.509 autofirmado
+### 📜 6.3. `firmaOtra.php` — Certificado X.509 autofirmado
 
 En este programa se agregó un formulario que permite introducir los datos de identificación del certificado: país, provincia, localidad, organización, nombre común y correo de prueba.
 
@@ -190,7 +206,7 @@ El certificado se guarda como `certout.pem` junto con su clave privada `privkey.
 
 Este certificado es de prueba y autofirmado: **no demuestra que su identidad haya sido validada por una autoridad certificadora confiable**.
 
-### 6.4. `FirmarMensaje.php` — Firma y verificación con certificado
+### 🖊️ 6.4. `FirmarMensaje.php` — Firma y verificación con certificado
 
 Este programa utiliza la clave privada y el certificado generados en `firmaOtra.php`. Recibe un mensaje mediante formulario, firma el texto con RSA/SHA-256 y obtiene la clave pública del certificado para verificarlo.
 
@@ -202,7 +218,7 @@ También se añade `[alterado]` al mensaje original y se comprueba nuevamente co
 
 **Resultado observado:** firma válida para el original y firma inválida al modificar el contenido. La detección se demuestra porque la alteración fue realizada intencionalmente durante la prueba.
 
-### 6.5. `Sodium.php` — Cifrado autenticado y detección de alteraciones
+### 🛡️ 6.5. `Sodium.php` — Cifrado autenticado y detección de alteraciones
 
 Como actividad adicional se creó un ejemplo mediante **Libsodium**, utilizando la extensión Sodium incluida en PHP moderno. En este programa se genera una clave temporal, un *nonce* aleatorio y un mensaje cifrado autenticado mediante `sodium_crypto_secretbox()`.
 

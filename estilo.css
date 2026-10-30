@@ -1,0 +1,14 @@
+/* Estilos compartidos por los formularios y resultados del laboratorio OpenSSL. */
+:root{font-family:Arial,Helvetica,sans-serif;color:#172437;background:#f4f6fa}*{box-sizing:border-box}body{margin:0}header{background:#13355e;color:white;padding:22px 24px}header h1{font-size:1.4rem;margin:0 0 8px}header p{margin:0;color:#d4e1f3}.container{max-width:900px;margin:25px auto;padding:0 18px 45px}nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}nav a{background:#e2eaf5;border-radius:6px;padding:9px 13px;color:#13416d;text-decoration:none;font-weight:bold}nav a:hover{background:#cddff2}main{background:white;border-radius:12px;padding:25px;box-shadow:0 4px 18px #253b5e15}label{display:block;font-weight:bold;margin:15px 0 6px}input,textarea{width:100%;padding:11px;border:1px solid #aebccd;border-radius:7px;font:inherit}textarea{min-height:100px}button{margin:18px 0 4px;padding:11px 18px;background:#175ea3;color:white;border:0;border-radius:6px;cursor:pointer;font-weight:bold}.result{background:#edf8f2;border-left:4px solid #1c8a57;padding:15px;margin:18px 0}.error{background:#fff0ee;border-left:4px solid #c73535;padding:14px;margin:15px 0}.info{background:#edf3fa;border-left:4px solid #3979af;padding:14px;margin:15px 0}pre{background:#142035;color:#eaf0ff;padding:14px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:6px}code{font-family:Consolas,monospace}small{color:#475569}a{color:#145ea0}h2{font-size:1.2rem}dd{margin:0 0 9px}dt{font-weight:bold}footer{color:#64748b;font-size:12px;margin-top:20px}
+
+/* Explicaciones desplegables del proceso criptografico (sin JavaScript) */
+.verification-detail{margin:20px 0 5px;border:1px solid #b8cde3;border-radius:9px;background:#fff;overflow:hidden}
+.verification-detail summary{padding:14px 17px;cursor:pointer;background:#e7f1fa;font-weight:700;color:#174d7d;list-style-position:inside}
+.verification-detail summary:hover{background:#d8eaf8}
+.verification-detail[open] summary{border-bottom:1px solid #b8cde3}
+.verification-body{padding:5px 17px 18px}
+.verification-body h3{margin:20px 0 8px;font-size:1rem;color:#183d61}
+.verification-body p{margin:10px 0;line-height:1.5;overflow-wrap:anywhere}
+.verification-body pre{font-size:.9rem;line-height:1.55}
+.verification-body .explanation{background:#f1f5f9;padding:12px;border-radius:6px;border-left:3px solid #7aa4cb}
+@media (max-width:550px){.verification-body{padding:5px 12px 13px}.verification-body pre{font-size:.8rem}}

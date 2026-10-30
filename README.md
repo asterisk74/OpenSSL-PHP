@@ -1,14 +1,14 @@
 # Laboratorio de seguridad en PHP con OpenSSL y Sodium
 
 **Universidad Tecnológica de Panamá**  
-**Facultad:** Facultad de Ingeniería Eléctrica  
+**Facultad:** Facultad de Ciencias de la Computacion  
 **Campus:** Víctor Levi Sasso  
 **Asignatura:** Desarrollo de Web  
 **Docente:** Ing. Irina Fong  
 **Tema:** Programación segura según OWASP — protección de datos  
-**Estudiante(s):** [Completar nombre(s)]  
-**Período:** II semestre de 2026  
-**Fecha de realización:** 29 de octubre de 2026
+**Estudiante(s):** Andres Dommar E-8-180720
+                   Dylan Pitti   8-1024-553
+**Fecha de realización:** 30 de octubre de 2026
 
 ## Índice
 
@@ -309,8 +309,6 @@ El resultado esperado de cada archivo es `No syntax errors detected ...`. Este c
 Durante el desarrollo de este laboratorio pude aprender sobre cómo utilizar diferentes funciones criptográficas de PHP con OpenSSL y Sodium para proteger información y comprobar si ha sido modificada. Pude comprender mejor la diferencia entre el cifrado y la firma digital, ya que el primero permite mantener la confidencialidad de los datos, mientras que la segunda ayuda a verificar la integridad del mensaje mediante una clave pública y su firma correspondiente.
 
 También pude observar la importancia de generar correctamente las claves, utilizar los valores de IV o nonce adecuados y proteger los archivos privados. Las pruebas con los mensajes alterados permitieron comprobar que incluso una modificación pequeña provoca el rechazo de una firma, mientras que el ejemplo de Sodium demostró cómo el cifrado autenticado detecta cambios en el contenido cifrado antes de devolver el mensaje. Estas prácticas ayudaron a comprender la importancia de implementar mecanismos criptográficos adecuados al desarrollar aplicaciones web.
-
-> **Nota:** Este README documenta el proyecto y facilita su reproducción. El documento de evaluación solicitado en la guía es un **informe técnico en PDF** con capturas y tablas de documentación de funciones.
 
 ## 12. Referencias
 
